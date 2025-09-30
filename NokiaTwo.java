@@ -55,14 +55,14 @@ import java.util.Scanner;
 					System.out.print(phonebook);
 					phonebookinput = input.nextInt();
 					switch(phonebookinput){
-						case 1->System.out.print("Search");
+						case 1->System.out.println("Search");
 						case 0-> System.out.println ("Goodbye from phonebook");
-						case 2->System.out.print("service nos");
-						case 3->System.out.print("Add name");			
-						case 4->System.out.print("Erase");
-						case 5->System.out.print("Edit");
-						case 6->System.out.print("Assign tone");
-						case 7->System.out.print("send b'card");			
+						case 2->System.out.println("service nos");
+						case 3->System.out.println("Add name");			
+						case 4->System.out.println("Erase");
+						case 5->System.out.println("Edit");
+						case 6->System.out.println("Assign tone");
+						case 7->System.out.println("send b'card");			
 						case 8->{
 							int optioninput = 100;
 							while(optioninput != 0){
@@ -87,9 +87,9 @@ import java.util.Scanner;
 										}
 						}
 				
-						case 9->System.out.print("Speed dials");
-						case 10->System.out.print("Voice tags");
-						default->System.out.print("enter a valid number");
+						case 9->System.out.println("Speed dials");
+						case 10->System.out.println("Voice tags");
+						default->System.out.println("enter a valid number");
 					}
 				}
 				}
@@ -118,13 +118,13 @@ import java.util.Scanner;
 					System.out.print(messages);
 					messagesinput = input.nextInt();
 					switch(messagesinput){
-						case 1->System.out.print("Write messages");
-						case 2->System.out.print("inbox");
-						case 3->System.out.print("outbox");			
-						case 4->System.out.print("picture messages");
-						case 5->System.out.print("templates");
-						case 6->System.out.print("smileys");
-						case 0->System.out.print("goodbye from messaeges");
+						case 1->System.out.println("Write messages");
+						case 2->System.out.println("inbox");
+						case 3->System.out.println("outbox");			
+						case 4->System.out.println("picture messages");
+						case 5->System.out.println("templates");
+						case 6->System.out.println("smileys");
+						case 0->System.out.println("goodbye from messaeges");
 						case 7->{int messageinput= 100;
 							while(messageinput != 0){
 							String messagessettings ="""
@@ -155,11 +155,11 @@ import java.util.Scanner;
 									System.out.print(set);
 									setinput = input.nextInt();
 									switch(setinput){
-										case 1->System.out.print("Messages centre number");
-										case 2->System.out.print("Messages sent as");
-										case 3->System.out.print("Messages Validity");
-										case 0->System.out.print("goodbye from set");
-										default->System.out.print("enter a valid number");
+										case 1->System.out.println("Messages centre number");
+										case 2->System.out.println("Messages sent as");
+										case 3->System.out.println("Messages Validity");
+										case 0->System.out.println("goodbye from set");
+										default->System.out.println("enter a valid number");
 									}
 									}
 								}
@@ -180,21 +180,21 @@ import java.util.Scanner;
 									System.out.print(common);
 									commoninput = input.nextInt();
 									switch(commoninput){
-										case 1->System.out.print("Delivery reports");
-										case 2->System.out.print("Reply via same centre");
-										case 3->System.out.print("Character support");
-										case 0->System.out.print("goodbye to cmmon"); 
-										default->System.out.print("enter a valid number");
+										case 1->System.out.println("Delivery reports");
+										case 2->System.out.println("Reply via same centre");
+										case 3->System.out.println("Character support");
+										case 0->System.out.println("goodbye to cmmon"); 
+										default->System.out.println("enter a valid number");
 
 									}
 								}}
 							}	}
 						}
 
-						case 8->System.out.print("info service");
-						case 9->System.out.print("Voice mailbox number");
-						case 10->System.out.print("service command editor");
-						default->System.out.print("enter a valid number");
+						case 8->System.out.println("info service");
+						case 9->System.out.println("Voice mailbox number");
+						case 10->System.out.println("service command editor");
+						default->System.out.println("enter a valid number");
 						}	
 					}
 					
@@ -224,10 +224,10 @@ import java.util.Scanner;
 					System.out.print(call);
 					callinput = input.nextInt();
 					switch(callinput){
-						case 1->System.out.print("Missed calls");
-						case 2->System.out.print("Rececieved calls");
-						case 3->System.out.print("Dialled numbers");		
-						case 4->System.out.print("Erase recent call lists");
+						case 1->System.out.println("Missed calls");
+						case 2->System.out.println("Rececieved calls");
+						case 3->System.out.println("Dialled numbers");		
+						case 4->System.out.println("Erase recent call lists");
 						case 5->{int showcallinput = 100;
 							while(showcallinput != 0){
 
@@ -245,12 +245,12 @@ import java.util.Scanner;
 							System.out.print(showcall);
 							showcallinput = input.nextInt();
 							switch(showcallinput){
-							case 1->System.out.print("last call duration");
-							case 2->System.out.print("all calls calls");
-							case 3->System.out.print("Receievd calls numbers");
-							case 4->System.out.print("Dialed call duration");
-							case 5->System.out.print("Clear timers");
-							default->System.out.print("enter a valid number");
+							case 1->System.out.println("last call duration");
+							case 2->System.out.println("all calls calls");
+							case 3->System.out.println("Receievd calls numbers");
+							case 4->System.out.println("Dialed call duration");
+							case 5->System.out.println("Clear timers");
+							default->System.out.println("enter a valid number");
 							}}
 						}		
 						case 6->{ int callcostinput = 100;
@@ -266,11 +266,11 @@ import java.util.Scanner;
 							System.out.print(callcost);
 							callcostinput = input.nextInt();
 							switch(callcostinput){
-							case 1->System.out.print("last call cost");
-							case 2->System.out.print("all calls cost");
-							case 3->System.out.print("clear counters");
-							case 0->System.out.print("");
-							default->System.out.print("enter a valid number");	
+							case 1->System.out.println("last call cost");
+							case 2->System.out.println("all calls cost");
+							case 3->System.out.println("clear counters");
+							case 0->System.out.println("");
+							default->System.out.println("enter a valid number");	
 							}
 							}
 
@@ -288,15 +288,15 @@ import java.util.Scanner;
 								System.out.print(costsettings);
 								costsettingsinput = input.nextInt();
 								switch(costsettingsinput){
-								case 1->System.out.print("call cost limit");
-								case 2->System.out.print("show costs in");
-								case 0 ->System.out.print("");
-								default->System.out.print("enter a valid number");
+								case 1->System.out.println("call cost limit");
+								case 2->System.out.println("show costs in");
+								case 0 ->System.out.println("");
+								default->System.out.println("enter a valid number");
 								}
 							}
 						}
-						case 8->System.out.print("Prepaid credit");
-						default->System.out.print("enter a valid number");
+						case 8->System.out.println("Prepaid credit");
+						default->System.out.println("enter a valid number");
 						}
 					}
 
@@ -323,17 +323,17 @@ import java.util.Scanner;
 					System.out.print(tones);
 					tonesinput= input.nextInt();
 					switch(tonesinput){
-						case 1->System.out.print("Ringing tone");
-						case 2->System.out.print("Ringing volume");
-						case 3->System.out.print("incoming call alert");
-						case 4->System.out.print("composer");
-						case 5->System.out.print("Message alert tone");
-						case 6->System.out.print("Keypad tones");
-						case 7->System.out.print("Warning and game tones");
-						case 8->System.out.print("Vibrating alert");
-						case 9->System.out.print("screen saver");
-						case 0->System.out.print("");
-						default->System.out.print("enter a valid number");
+						case 1->System.out.println("Ringing tone");
+						case 2->System.out.println("Ringing volume");
+						case 3->System.out.println("incoming call alert");
+						case 4->System.out.println("composer");
+						case 5->System.out.println("Message alert tone");
+						case 6->System.out.println("Keypad tones");
+						case 7->System.out.println("Warning and game tones");
+						case 8->System.out.println("Vibrating alert");
+						case 9->System.out.println("screen saver");
+						case 0->System.out.println("");
+						default->System.out.println("enter a valid number");
 
 					} 
 					}
@@ -372,14 +372,14 @@ import java.util.Scanner;
 								System.out.print(callsettings);
 								callinput = input.nextInt();
 								switch(callinput){
-									case 1->System.out.print("Automatic redial");
-									case 2->System.out.print("Speed dailling");
-									case 3->System.out.print("Call waiting options");
-									case 4->System.out.print("Own number sending");
-									case 5->System.out.print("Phone line in use");
-									case 6->System.out.print("Automatic answer");
-									case 0->System.out.print("");
-									default->System.out.print("enter a valid number");
+									case 1->System.out.println("Automatic redial");
+									case 2->System.out.println("Speed dailling");
+									case 3->System.out.println("Call waiting options");
+									case 4->System.out.println("Own number sending");
+									case 5->System.out.println("Phone line in use");
+									case 6->System.out.println("Automatic answer");
+									case 0->System.out.println("");
+									default->System.out.println("enter a valid number");
 
 								}
 								}
@@ -402,14 +402,14 @@ import java.util.Scanner;
 								System.out.print(phonesettings);
 								phoneinput = input.nextInt();
 								switch(phoneinput){
-									case 1->System.out.print("language");
-									case 2->System.out.print("cell info display");
-									case 3->System.out.print("welcome note");
-									case 4->System.out.print("Network selection");
-									case 5->System.out.print("lights");
-									case 6->System.out.print("Confirm SIM service actions");
-									case 0->System.out.print("Confirm SIM service actions");
-									default->System.out.print("enter a valid number");
+									case 1->System.out.println("language");
+									case 2->System.out.println("cell info display");
+									case 3->System.out.println("welcome note");
+									case 4->System.out.println("Network selection");
+									case 5->System.out.println("lights");
+									case 6->System.out.println("Confirm SIM service actions");
+									case 0->System.out.println("Confirm SIM service actions");
+									default->System.out.println("enter a valid number");
 								
 	
 								}
@@ -436,28 +436,28 @@ import java.util.Scanner;
 								System.out.print(Securitysettings);
 								Securityinput = input.nextInt();
 								switch(Securityinput){
-									case 1->System.out.print("PIN code request");
-									case 2->System.out.print("call barring service");
-									case 3->System.out.print("Fixed dailling");
-									case 4->System.out.print("Closed user group");
-									case 5->System.out.print("phone security");
-									case 6->System.out.print("Change access code");
-									case 0->System.out.print("");
-									default->System.out.print("enter a valid number");
+									case 1->System.out.println("PIN code request");
+									case 2->System.out.println("call barring service");
+									case 3->System.out.println("Fixed dailling");
+									case 4->System.out.println("Closed user group");
+									case 5->System.out.println("phone security");
+									case 6->System.out.println("Change access code");
+									case 0->System.out.println("");
+									default->System.out.println("enter a valid number");
 								
 	
 								}
 								}
 
 							}
-							case 4-> System.out.print("Restore factory settings");
-							default->System.out.print("enter a valid number");
+							case 4-> System.out.println("Restore factory settings");
+							default->System.out.println("enter a valid number");
 					}		}
 				}
-				case 7-> System.out.print("Call divert");
-				case 8-> System.out.print("Games");
-				case 9-> System.out.print("calculator");
-				case 10-> System.out.print("Reminders");
+				case 7-> System.out.println("Call divert");
+				case 8-> System.out.println("Games");
+				case 9-> System.out.println("calculator");
+				case 10-> System.out.println("Reminders");
 				case 11->{int clockinput = 100;
 					while(clockinput != 0){
 						String clock = """
@@ -475,23 +475,23 @@ import java.util.Scanner;
 						System.out.print(clock);
 						clockinput = input.nextInt();
 						switch(clockinput){
-							case 1->System.out.print("Alarm clock");
-							case 2->System.out.print("Clock settings");
-							case 3->System.out.print("Date setting");
-							case 4->System.out.print("Stopwatch");
-							case 5->System.out.print("Countdown timer");
-							case 6->System.out.print("Auto update of date and time");
-							case 0->System.out.print("");
+							case 1->System.out.println("Alarm clock");
+							case 2->System.out.println("Clock settings");
+							case 3->System.out.println("Date setting");
+							case 4->System.out.println("Stopwatch");
+							case 5->System.out.println("Countdown timer");
+							case 6->System.out.println("Auto update of date and time");
+							case 0->System.out.println("");
 							default->System.out.print("enter a valid number");
 
 					}
 						}
 				}
 							
-				case 12-> System.out.print("Profiles");
-				case 13-> System.out.print("Sim services");
-				case 0-> System.out.print("Good bye");
-				default->System.out.print("enter a valid number");
+				case 12-> System.out.println("Profiles");
+				case 13-> System.out.println("Sim services");
+				case 0-> System.out.println("Good bye");
+				default->System.out.println("enter a valid number");
 
 		}
 
